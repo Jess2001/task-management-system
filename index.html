@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+<!-- include bootstrap css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+ 
+<!-- include jquery and bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+<!-- include sweetalert for displaying dialog messages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- left start -->
+        <div class="left">
+            <!-- header start -->
+            <header>
+                <!-- logo start -->
+                <div class="logo">
+                    <h2>Dashboard</h2>
+                    <div class="close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <!-- nav start -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="material-symbols-outlined full">
+                                </span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="newtask.html">
+                                <span class="material-symbols-outlined full">
+                                    tasks
+                                </span>
+                                <span class="title">New Tasks</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <!-- nav end -->
+            </header>
+            <!-- header end -->
+            
+        </div>
+        <!-- left end -->
+        <!-- right start -->
+        <div class="right">
+            <!-- top start -->
+            <div class="top">
+                <!-- searchBx start -->
+                <div class="searchBx">
+                    <h2>Dashboard</h2>
+                    <div class="inputBx">
+                        <span class="material-symbols-outlined searchOpen">
+                            search
+                        </span>
+                        <input type="text" placeholder="Search...">
+                        <span class="material-symbols-outlined searchClose">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <!-- searchBx end -->
+                <!-- user start -->
+                <div class="user">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <h2>Task Management<br><span>System</span></h2>
+                    <div class="arrow">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="toggle">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <!-- user end -->
+            </div>
+            <!-- top end -->
+            <!-- main start -->
+    <main>
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task One</h5>
+            <a href="#" class="btn btn-dark" data-toggle="popover" >View Task</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task Two</h5>
+            <a href="tasks.html" class="btn btn-dark">View Task</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task Three</h5>
+            <a href="tasks.html" class="btn btn-dark">View Task</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task Four</h5>
+            <a href="tasks.html" class="btn btn-dark">View Task</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task five</h5>
+            <a href="tasks.html" class="btn btn-dark">View Task</a>
+          </div>
+        </div>
+            
+
+        <div class="card" style="width: 12rem;">
+          <img src="images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Task six</h5>
+            <a href="tasks.html" class="btn btn-dark">View Task</a>
+          </div>
+        </div>   
+
+         
+            </main>
+            <!-- main end -->
+        </div>
+        <!-- right end -->
+    </div>
+    <!-- container end -->
+    <!--  JS TO ACTIVATE ALL POPOVERS-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+});
+                
+    </script> 
+</body>
+
+</html>
